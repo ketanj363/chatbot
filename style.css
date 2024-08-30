@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background:#303845 ;
+}
+.container{
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(32, 101, 174) 0px 7px 29px 0px ;
+    background: #466771;
+}
+.title{
+     text-align: center;
+     justify-content: center;
+     font-size: 40px;
+     font-weight: bold;
+     color: beige;
+}
+.chat{
+    height: 400px;
+    overflow-y: scroll ;
+    margin: 20px 0;
+    padding: 10%;
+    border: 2px solid #216054 ;
+    border-radius: 5px;
+    background-color:#303845  ;
+  
+}
+nav{
+    justify-content: center;
+    align-items: top;
+    display: flex;
+    font-size: bold;
+    color: aliceblue;
+    font-synthesis-position:auto;
+    
+}
+.message{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.user{
+justify-content: flex-end;
+}
+.bot{
+    justify-content: flex-start;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin:0 10px;
+}
+.user .avatar{
+    order: 2;
+    background: url("avatar.jpg");
+    background-size: cover;
+}
+.bot .avatar{
+    order: 1;
+    background:url("bot.jpg");
+    background-size: cover;
+    
+}
+.text{
+    max-width:900px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: bisque;
+}
+.user .text{
+    background:#4a4d52 ;
+}
+.bot .text{
+background: #8c8c8e;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cbcbce;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
+
+.input:focus{
+    border-color: #8296d0;
+    color: #1e1f1e;
+}
+.button{
+    position: absolute;
+    width: 60px;
+    border:1px;
+    padding: 1px;
+    background: #31363f;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-left: 10px;
+    margin-bottom: 0.1rem;
+    margin-left: -3.1rem;
+    outline: none;
+}
+.button i{
+    font-size: 3rem;
+}
+.button:hover{
+    box-shadow: inset 0 0 10px rgba(0,0,0, 0.2);
+}
+.chat::-webkit-scrollbar{
+    width: 10px;
+}
+.chat::-webkit-scrollbar-thumb{
+    background: #bcbdc0;
+    border-radius: 10px;
+}
+
+
+
+
